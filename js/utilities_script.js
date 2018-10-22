@@ -1,8 +1,3 @@
-/* 
-Zoom Template 
-http://www.templatemo.com/preview/templatemo_414_zoom
-*/
-
 var menuDisabled = false;
 
 jQuery(function($) {
@@ -15,7 +10,6 @@ jQuery(function($) {
     
     $(document).ready( function() {
 
-        loadGoogleMap();
         
         // backstretch for background image
         var defaultImgSrc = $('img.main-img').attr('src');
@@ -40,8 +34,7 @@ jQuery(function($) {
                     $(name+"-section").show('size',{easing: 'easeOutQuart', duration: 400},function(){
                         $(this).addClass("active");
                         
-                        // google map need to resize for animate contents
-                        google.maps.event.trigger(map, 'resize'); // resize map
+                    
                         $.backstretch("resize"); // resize the background image
                         menuDisabled = false;
                      });
@@ -53,22 +46,3 @@ jQuery(function($) {
     });
 
 });
-
-var map = '';
-
-function initialize() {
-    var mapOptions = {
-      zoom: 14,
-      center: new google.maps.LatLng(16.8496189,96.1288854)
-    };
-    map = new google.maps.Map(document.getElementById('map-canvas'),  mapOptions);
-}
-
-function loadGoogleMap(){
-    // load google map
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
-        'callback=initialize';
-    document.body.appendChild(script);
-}

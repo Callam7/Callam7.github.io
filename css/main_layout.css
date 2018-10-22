@@ -163,11 +163,6 @@ img.slide {
     font-size: 16px;
 }
 
-#map-canvas {
-	height: 260px;
-}
-
-
 .footer {
     overflow:hidden; 
     position:fixed; 
