@@ -16,6 +16,8 @@ h1, h2, h3, h4, h5, h6, span, p { font-family: 'Raleway', sans-serif; }
 
 .green { color: #CF0; }
 
+.red { color: orangered; }
+
 h2 {
 	padding: 10px 0;
 }
@@ -26,7 +28,7 @@ p {
 }
 
 a {
-	color: #FF6;
+	color: #246BB2;
 }
 
 a:hover {
@@ -245,7 +247,7 @@ img.slide {
     color: #246BB2;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1000px) {
     .footer {
         overflow:hidden; 
         position:static;
