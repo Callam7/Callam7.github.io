@@ -113,6 +113,10 @@ blockquote p {
 	text-decoration: none;
 }
 
+.evidence {
+    max-width: 100%;
+    height: auto;
+}
 
 img.slide {
     width: 100%; 
